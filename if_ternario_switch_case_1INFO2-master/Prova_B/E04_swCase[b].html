@@ -1,0 +1,43 @@
+<script>
+  //SWITCH CASE SWITCH CASE SWITCH CASE
+
+  //PROBLEMA: Abastecer o carro no posto de combustível
+  //Peça para o usuário informar o tipo de combustível que deseja colocar no seu veículo e considere a seguinte situação:
+  //Se informou gasolina, retornará a mensagem "O litro da gasolina custa R$ 5,00".
+  //Se informou álcool, retornará a mensagem "O álcool está em falta".
+  //Se informou GNV, retornará a mensagem "GNV está caro demais".
+  //Se informou diesel, retornará a mensagem "O litro do diesel custa R$ 8,00".
+  //Crie também um default que retornará a mensagem "Opção de combustível inválida".
+  //Apresente a mensagem de acordo com o tipo de combustível desejado.
+
+  //DICA: Use G para gasolina, A para álcool, n para GNV, D para diesel
+
+  //ENTRADA
+  const TipoCombustivel = prompt("Quer que tipo de combustivel? Use g para gasolina, a para álcool, n para GNV, d para diesel:")
+  let resposta;
+  //PROCESSAMENTO
+  switch (TipoCombustivel) {
+      case "g":
+              resposta = "O litro da gasolina custa R$ 5,00"
+          break;
+
+       case "a":
+            resposta = "O álcool está em falta"
+          break;
+
+      case "n":
+             resposta = "GNV está caro demais"
+          break;
+
+      case "d":
+             resposta = "O litro do diesel custa R$ 8,00"
+          break;
+
+      default: resposta = "Opção de combustivel invalida"
+          break;
+  }
+
+
+  //SAÍDA
+    alert(resposta)
+</script>
